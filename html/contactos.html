@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/icocatus.png" type="image/x-icon">
+    <!-- Incluye Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <title>Plantas Exóticas</title>
+    <style>
+        /* Estilos personalizados */
+        #contacto {
+            background-color: #f8f9fa; /* Fondo claro */
+        }
+
+        .form-control {
+            border-radius: 10px;
+            border: 2px solid #b0b0b0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-control:focus {
+            border-color: #6f42c1; /* Violeta para enfoque */
+            box-shadow: 0 0 8px rgba(111, 66, 193, 0.3);
+        }
+
+        .btn-violeta {
+            background-color: #6f42c1; /* Violeta */
+            border-color: #6f42c1;
+            color: #fff;
+        }
+
+        .btn-violeta:hover {
+            background-color: #5a379e;
+            border-color: #5a379e;
+        }
+
+        .card-form {
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .map-responsive {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body class="grid-container">
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="container-md d-flex align-items-center justify-content-between py-2">
+            <ul class="menu-items d-flex align-items-center mb-0" id="menu">
+                <li><a href="/html/index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="/html/contactos.html">Contacto</a></li>
+            </ul>
+            <img src="/img/logo_plant.png" class="logo" alt="Logo">
+        </div>
+    </header>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="p-5">
+        <div class="container">
+           
+            <!-- Centrar el formulario -->
+            <div class="d-flex justify-content-center">
+                <!-- Formulario de contacto centrado -->
+                <div class="col-lg-6">
+                    <div class="card-form">
+                        <form action="https://formspree.io/f/xbljywbj" method="POST" class="row g-4">
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Tu Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">Tu Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-violeta px-5 py-2">Enviar Mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="footer-content text-center p-3">
+            <p>&copy; 2024. Todos los derechos reservados a Plantas Exóticas.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
