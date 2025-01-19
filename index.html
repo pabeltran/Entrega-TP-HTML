@@ -8,186 +8,109 @@
     <link rel="shortcut icon" href="/img/icocatus.png" type="image/x-icon">
     <!-- Incluye Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/styles.css">
-    <title>Plantas Exóticas</title>
+    <link href="/CSS/styles.css" rel="stylesheet">
+    <title>TechiPhone</title>
 </head>
 
 <body class="grid-container">
     <!-- Encabezado -->
-    <header class="header">
-        <div class="container-md d-flex align-items-center justify-content-between py-2">
-            <ul class="menu-items d-flex align-items-center mb-0" id="menu">
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/contactos.html">Contacto</a></li>
-            </ul>
-            <img src="/img/logo_plant.png" class="logo" alt="Logo">
-        </div>
-    </header>
-
-    <!-- Barra de navegación -->
-    
-
-    <!-- Sección principal -->
-    <article class="main">
-        <!-- Hero Section -->
-        <section id="inicio" class="hero text-center p-5">
-            <h1>Bienvenido a Plantas Exóticas</h1>
-            <p>Descubre la belleza de la naturaleza en tu hogar.</p>
-        </section>
-
-        <!-- Sección de Productos -->
-        <section id="productos" class="productos">
-            <h2 class="text-center">Nuestros Productos</h2>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
-                    <!-- Tarjetas de productos -->
-                    <div class="col">
-                        <div class="card">
-                            <img src="/img/Orquidea.jpg" class="card-img-top" alt="Orquídea Violeta">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Orquídea Violeta</h3>
-                                <p class="card-text">$50.00</p>
-                                <button class="btn btn-success">Añadir al Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="/img/Bonsai.jpg" class="card-img-top" alt="Bonsái Japonés">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Bonsái Japonés</h3>
-                                <p class="card-text">$120.00</p>
-                                <button class="btn btn-success">Añadir al Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="/img/cactus.jpg" class="card-img-top" alt="Cactus Raro">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Cactus Raro</h3>
-                                <p class="card-text">$35.00</p>
-                                <button class="btn btn-success">Añadir al Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="/img/Cattleya.jpg" class="card-img-top" alt="Cattleya amethystoglossa">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Cattleya</h3>
-                                <p class="card-text">$35.00</p>
-                                <button class="btn btn-success">Añadir al Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="/img/ORQUIDEA.jpg" class="card-img-top" alt="Orquidea Oncidium">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Orquidea Oncidium</h3>
-                                <p class="card-text">$35.00</p>
-                                <button class="btn btn-success">Añadir al Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="/img/hibiscus.jpg" class="card-img-top" alt="Hibiscus rosa">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Hibiscus Rosa</h3>
-                                <p class="card-text">$35.00</p>
-                                <button class="btn btn-success">Añadir al Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="/img/carnivora.jpg" class="card-img-top" alt="Planta Carnívora">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Planta Carnívora</h3>
-                                <p class="card-text">$60.00</p>
-                                <button class="btn btn-success">Añadir al Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="/img/gazania.jpg" class="card-img-top" alt="Gazania">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Gazania</h3>
-                                <p class="card-text">$25.00</p>
-                                <button class="btn btn-success">Añadir al Carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <img src="/img/lirio.jpg" class="card-img-top" alt="Lirio">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">Lirio</h3>
-                                <p class="card-text">$40.00</p>
-                                <button class="btn btn-success">Añadir al Carrito</button>
-                            </div>
-                        </div>
-                    </div>
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="https://img.icons8.com/clouds/100/iphone.png" alt="iphone"" width="100" height="100" class="rounded-circle me-2">
+                    <span>TechiPhone</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactos.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carro.html">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        
-    </article>
+        </nav>
+    </header>
     
-    <!-- Pie de página -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024. Todos los derechos reservados a Plantas Exóticas.</p>
+
+    <!-- Carrusell -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/1920/200?random=1" class="d-block w-100" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1920/200?random=2" class="d-block w-100" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/1920/200?random=3" class="d-block w-100" alt="Imagen 3">
+            </div>
         </div>
-    </footer>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+    
 
-<!-- Script de JavaScript -->
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const API_URL = "https://fakestoreapi.com/products"; // URL de la API de ejemplo
-        const productosContainer = document.getElementById("productos-container");
+    <main>
+        <section>
+         
+          <div class="container my-5">
+                  <div id="productos-container" class="row">
+                    
+                  </div>
+                  <!-- Paginacion -->
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button id="prev-btn" class="btn btn-secondary">Anterior</button>
+                    <span id="page-info"></span>
+                    <button id="next-btn" class="btn btn-secondary">Siguiente</button>
+                 </div>
+          </div>
+    
+    
+        </section>    
+    </main>
+    
+   <!-- Pie de página Mejorado -->
+   <footer style="background-color: #34495e;" class="text-white text-center text-lg-start mt-5">
+    <div class="container p-4">
+        <div class="row justify-content-center">
+            <!-- Sección de información -->
+            <div class="col-lg-6 col-md-12 mb-4 text-center">
+                <h5 class="text-uppercase mb-4">TechiPhone</h5>
+                <p>
+                    <strong>Una empresa</strong> dedicada al servicio y excelencia en reparación, venta y asesoramiento de equipos Celulares.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Línea divisora -->
+    <hr class="text-white opacity-50 m-0">
+    <!-- Derechos reservados -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Todos los derechos reservados a <strong>TechiPhone</strong>
+    </div>
+</footer>
 
-        // Función para cargar productos dinámicamente desde la API
-        async function cargarProductos() {
-            try {
-                const respuesta = await fetch(API_URL);
-                const productos = await respuesta.json();
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/index.js"></script>
 
-                // Generar tarjetas para cada producto
-                productos.forEach(producto => {
-                    const tarjeta = document.createElement("div");
-                    tarjeta.classList.add("col");
-                    tarjeta.innerHTML = `
-                        <div class="card">
-                            <img src="${producto.image}" class="card-img-top" alt="${producto.title}">
-                            <div class="card-body text-center">
-                                <h3 class="card-title">${producto.title}</h3>
-                                <p class="card-text">$${producto.price.toFixed(2)}</p>
-                                <button class="btn btn-success" onclick="añadirAlCarrito('${producto.id}')">Añadir al Carrito</button>
-                            </div>
-                        </div>
-                    `;
-                    productosContainer.appendChild(tarjeta);
-                });
-            } catch (error) {
-                console.error("Error al cargar los productos:", error);
-                productosContainer.innerHTML = `<p>Error al cargar los productos. Intenta nuevamente más tarde.</p>`;
-            }
-        }
-
-        // Función para añadir productos al carrito
-        window.añadirAlCarrito = function (productoId) {
-            alert(`Producto con ID ${productoId} añadido al carrito.`);
-            // Aquí puedes agregar la lógica adicional para el carrito
-        };
-
-        // Llamar a la función para cargar productos
-        cargarProductos();
-    });
-</script>
 </body>
 
 </html>

@@ -14,14 +14,14 @@ body {
     padding: 20px;
     background-color: #f5f5f5;
 }
+
+/* Logo */
 .logo {
     width: 50px;
     height: auto;
 }
 
-.alinear-izquierda {
-    text-align: left;
-}
+/* Grid Container */
 .grid-container {
     display: grid;
     gap: 20px;
@@ -32,7 +32,6 @@ body {
         "footer";
 }
 
-/* Elementos de la grid */
 .grid-container>* {
     box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
     border-radius: 10px;
@@ -44,6 +43,7 @@ body {
 /* Header */
 .header {
     grid-area: header;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     background-color: rgba(103, 93, 241, 0.74);
     color: #fff;
 }
@@ -52,76 +52,23 @@ body {
 .navbar {
     grid-area: navbar;
     background-color: rgba(179, 46, 241, 0.74);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.menu-icon {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
+.navbar-toggler {
+    border: none;
 }
 
-.menu-items {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.navbar-toggler-icon {
+    background-image: url('https://img.icons8.com/material-outlined/24/ffffff/menu.png');
 }
 
-.menu-items li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.nav-link.active {
+    font-weight: bold;
+    color: #1abc9c;
+    text-decoration: underline;
 }
 
-.menu-items li a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* Ocultar el menú en pantallas pequeñas */
-.menu-items {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.menu-items.active {
-    display: flex;
-}
-
-.menu-icon {
-    display: block;
-}
-
-@media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "navbar"
-            "main"
-            "footer";
-    }
-
-    .menu-items {
-        display: flex;
-        flex-direction: row;
-        background-color: transparent;
-        position: static;
-        box-shadow: none;
-    }
-
-    .menu-icon {
-        display: none;
-    }
-}
-
-/* Main */
+/* Main Section */
 .main {
     grid-area: main;
     display: flex;
@@ -141,14 +88,6 @@ body {
     font-size: 2.5rem;
     color: #4A4A4A;
     margin-bottom: 30px;
-}
-
-/* Contenedor de tarjetas */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
 }
 
 /* Estilos para las tarjetas */
@@ -191,7 +130,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Botón de la tarjeta */
 .card .btn {
     background-color: #673bf4;
     color: #ffffff;
@@ -221,5 +159,22 @@ body {
 @media (max-width: 768px) {
     .card {
         width: 90%;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-items {
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        position: static;
+        box-shadow: none;
+    }
+    .menu-icon {
+        display: none;
     }
 }
