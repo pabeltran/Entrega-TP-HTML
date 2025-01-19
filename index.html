@@ -43,7 +43,7 @@
                     <!-- Tarjetas de productos -->
                     <div class="col">
                         <div class="card">
-                            <img src="/img/Orquideas.jpg" class="card-img-top" alt="Orquídea Violeta">
+                            <img src="/img/Orquidea.jpg" class="card-img-top" alt="Orquídea Violeta">
                             <div class="card-body text-center">
                                 <h3 class="card-title">Orquídea Violeta</h3>
                                 <p class="card-text">$50.00</p>
@@ -144,15 +144,50 @@
         </div>
     </footer>
 
-    <!-- Script de JavaScript -->
-    <script defer>
-        const menuToggle = document.getElementById("menu-toggle");
-        const menu = document.getElementById("menu");
+<!-- Script de JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const API_URL = "https://fakestoreapi.com/products"; // URL de la API de ejemplo
+        const productosContainer = document.getElementById("productos-container");
 
-        menuToggle.addEventListener("click", function() {
-            menu.classList.toggle("active");
-        });
-    </script>
+        // Función para cargar productos dinámicamente desde la API
+        async function cargarProductos() {
+            try {
+                const respuesta = await fetch(API_URL);
+                const productos = await respuesta.json();
+
+                // Generar tarjetas para cada producto
+                productos.forEach(producto => {
+                    const tarjeta = document.createElement("div");
+                    tarjeta.classList.add("col");
+                    tarjeta.innerHTML = `
+                        <div class="card">
+                            <img src="${producto.image}" class="card-img-top" alt="${producto.title}">
+                            <div class="card-body text-center">
+                                <h3 class="card-title">${producto.title}</h3>
+                                <p class="card-text">$${producto.price.toFixed(2)}</p>
+                                <button class="btn btn-success" onclick="añadirAlCarrito('${producto.id}')">Añadir al Carrito</button>
+                            </div>
+                        </div>
+                    `;
+                    productosContainer.appendChild(tarjeta);
+                });
+            } catch (error) {
+                console.error("Error al cargar los productos:", error);
+                productosContainer.innerHTML = `<p>Error al cargar los productos. Intenta nuevamente más tarde.</p>`;
+            }
+        }
+
+        // Función para añadir productos al carrito
+        window.añadirAlCarrito = function (productoId) {
+            alert(`Producto con ID ${productoId} añadido al carrito.`);
+            // Aquí puedes agregar la lógica adicional para el carrito
+        };
+
+        // Llamar a la función para cargar productos
+        cargarProductos();
+    });
+</script>
 </body>
 
 </html>
