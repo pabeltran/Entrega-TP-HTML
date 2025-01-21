@@ -8,17 +8,32 @@
     <link rel="shortcut icon" href="/img/icocatus.png" type="image/x-icon">
     <!-- Incluye Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
     <link href="/CSS/styles.css" rel="stylesheet">
     <title>TechiPhone</title>
+
+    <style>
+        /* Unificar colores del header y footer */
+        .bg-custom {
+            background-color: #34495e !important;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .navbar-dark .navbar-nav .nav-link.active {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body class="grid-container">
+
     <!-- Encabezado -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="https://img.icons8.com/clouds/100/iphone.png" alt="iphone"" width="100" height="100" class="rounded-circle me-2">
+                    <img src="https://img.icons8.com/clouds/100/iphone.png" alt="iphone" width="100" height="100" class="rounded-circle me-2">
                     <span>TechiPhone</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +48,8 @@
                             <a class="nav-link" href="contactos.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="carro.html"> <i class="fas fa-shopping-cart"></i>
+                            <a class="nav-link" href="carro.html">
+                                <i class="fas fa-shopping-cart"></i> <!-- Ícono del carrito -->
                             </a>
                         </li>
                     </ul>
@@ -41,9 +57,8 @@
             </div>
         </nav>
     </header>
-    
 
-    <!-- Carrusell -->
+    <!-- Carrusel -->
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -65,50 +80,47 @@
             <span class="visually-hidden">Siguiente</span>
         </button>
     </div>
-    
 
+    <!-- Main -->
     <main>
         <section>
-         
-          <div class="container my-5">
-                  <div id="productos-container" class="row">
-                    
-                  </div>
-                  <!-- Paginacion -->
-                  <div class="d-flex justify-content-between align-items-center">
+            <div class="container my-5">
+                <div id="productos-container" class="row">
+                    <!-- Contenedor de productos dinámico -->
+                </div>
+                <!-- Paginación -->
+                <div class="d-flex justify-content-between align-items-center">
                     <button id="prev-btn" class="btn btn-secondary">Anterior</button>
                     <span id="page-info"></span>
                     <button id="next-btn" class="btn btn-secondary">Siguiente</button>
-                 </div>
-          </div>
-    
-    
-        </section>    
+                </div>
+            </div>
+        </section>
     </main>
-    
-   <!-- Pie de página Mejorado -->
-   <footer style="background-color: #34495e;" class="text-white text-center text-lg-start mt-5">
-    <div class="container p-4">
-        <div class="row justify-content-center">
-            <!-- Sección de información -->
-            <div class="col-lg-6 col-md-12 mb-4 text-center">
-                <h5 class="text-uppercase mb-4">TechiPhone</h5>
-                <p>
-                    <strong>Una empresa</strong> dedicada al servicio y excelencia en reparación, venta y asesoramiento de equipos Celulares.
-                </p>
+
+    <!-- Pie de página -->
+    <footer class="bg-custom text-white text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row justify-content-center">
+                <!-- Sección de información -->
+                <div class="col-lg-6 col-md-12 mb-4 text-center">
+                    <h5 class="text-uppercase mb-4">TechiPhone</h5>
+                    <p>
+                        <strong>Una empresa</strong> dedicada al servicio y excelencia en reparación, venta y asesoramiento de equipos Celulares.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Línea divisora -->
-    <hr class="text-white opacity-50 m-0">
-    <!-- Derechos reservados -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2024 Todos los derechos reservados a <strong>TechiPhone</strong>
-    </div>
-</footer>
+        <!-- Línea divisora -->
+        <hr class="text-white opacity-50 m-0">
+        <!-- Derechos reservados -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Todos los derechos reservados a <strong>TechiPhone</strong>
+        </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 

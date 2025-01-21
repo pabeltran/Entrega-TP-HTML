@@ -9,15 +9,28 @@
     <!-- SweetAlert CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
+    <style>
+        /* Unificar colores de header y footer */
+        .bg-custom {
+            background-color: #34495e !important;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .navbar-dark .navbar-nav .nav-link.active {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <header class="bg-dark text-white p-3">
+    <!-- Header -->
+    <header class="bg-custom text-white p-3">
         <div class="container d-flex justify-content-between align-items-center">
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
             <div class="container">
                 <div class="d-flex align-items-center">
-                    <img src="https://img.icons8.com/clouds/100/iphone.png" alt="iphone"" width="100" height="100" class="rounded-circle me-2">
+                    <img src="https://img.icons8.com/clouds/100/iphone.png" alt="iphone" width="100" height="100" class="rounded-circle me-2">
                     <span>Pablo Ariel Beltrán</span>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +46,7 @@
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="carrito.html">
-                              <i class="fas fa-shopping-cart"> </i> 
+                              <i class="fas fa-shopping-cart"></i> 
                           </a>
                       </li>
                     </ul>
@@ -42,8 +55,6 @@
         </nav>
     </header>
     
-    
-
     <!-- Carrito de compras -->
     <div class="container mt-5">
         <h2 class="mb-4">Carro de Compras</h2>
@@ -72,26 +83,29 @@
         </div>
     </div>
 
-
-
-
-<!-- Pie de página -->
-<footer style="background-color: #34495e;" class="text-white text-center text-lg-start mt-5">
-    <div class="container p-4">
-        <div class="row justify-content-center">
-            <!-- Sección de información -->
-            <div class="col-lg-6 col-md-12 mb-4 text-center">
-                <h5 class="text-uppercase mb-4">TechiPhone</h5>
-                <p>
-                    <strong>Una empresa</strong> dedicada al servicio y excelencia en reparación, venta y asesoramiento de equipos Celulares.
-                </p>
+    <!-- Pie de página -->
+    <footer class="bg-custom text-white text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row justify-content-center">
+                <!-- Sección de información -->
+                <div class="col-lg-6 col-md-12 mb-4 text-center">
+                    <h5 class="text-uppercase mb-4">TechiPhone</h5>
+                    <p>
+                        <strong>Una empresa</strong> dedicada al servicio y excelencia en reparación, venta y asesoramiento de equipos Celulares.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Línea divisora -->
-    <hr class="text-white opacity-50 m-0">
-    <!-- Derechos reservados -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2024 Todos los derechos reservados a <strong>TechiPhone</strong>
-    </div>
-</footer>
+        <!-- Línea divisora -->
+        <hr class="text-white opacity-50 m-0">
+        <!-- Derechos reservados -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Todos los derechos reservados a <strong>TechiPhone</strong>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/carro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
