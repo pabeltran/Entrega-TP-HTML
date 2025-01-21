@@ -15,51 +15,13 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Logo */
-.logo {
-    width: 50px;
-    height: auto;
-}
-
-/* Grid Container */
-.grid-container {
-    display: grid;
-    gap: 20px;
-    grid-template-areas:
-        "header"
-        "navbar"
-        "main"
-        "footer";
-}
-
-.grid-container>* {
-    box-shadow: 10px 6px 37px -13px rgba(51, 51, 51, 0.74);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    font-weight: 500;
-}
-
-/* Header */
-.header {
-    grid-area: header;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: rgba(103, 93, 241, 0.74);
-    color: #fff;
-}
-
 /* Navbar */
 .navbar {
-    grid-area: navbar;
     background-color: rgba(179, 46, 241, 0.74);
 }
 
 .navbar-toggler {
     border: none;
-}
-
-.navbar-toggler-icon {
-    background-image: url('https://img.icons8.com/material-outlined/24/ffffff/menu.png');
 }
 
 .nav-link.active {
@@ -70,7 +32,6 @@ body {
 
 /* Main Section */
 .main {
-    grid-area: main;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,74 +40,8 @@ body {
     padding: 30px;
 }
 
-/* Sección de productos */
-.productos {
-    padding: 30px;
-}
-
-.productos h2 {
-    font-size: 2.5rem;
-    color: #4A4A4A;
-    margin-bottom: 30px;
-}
-
-/* Estilos para las tarjetas */
-.card {
-    width: 300px;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    background-color: #ffffff;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-}
-
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #4A4A4A;
-}
-
-.card-body {
-    padding: 20px;
-    text-align: center;
-}
-
-.card-title {
-    font-size: 1.5rem;
-    color: #673bf4;
-    margin-bottom: 10px;
-}
-
-.card-text {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.card .btn {
-    background-color: #673bf4;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.card .btn:hover {
-    background-color: #562acb;
-}
-
 /* Footer */
 .footer {
-    grid-area: footer;
     background-color: rgba(237, 123, 67, 0.74);
     color: #fff;
     text-align: center !important;
@@ -157,24 +52,15 @@ body {
 
 /* Ajustes Responsivos */
 @media (max-width: 768px) {
-    .card {
-        width: 90%;
-    }
-
     .navbar-collapse {
         text-align: center;
     }
 }
+#carrito-items tr td {
+    vertical-align: middle;
+}
 
-@media (min-width: 768px) {
-    .menu-items {
-        display: flex;
-        flex-direction: row;
-        background-color: transparent;
-        position: static;
-        box-shadow: none;
-    }
-    .menu-icon {
-        display: none;
-    }
+#finalizar-compra:hover {
+    background-color: #28a745;
+    border-color: #218838;
 }
