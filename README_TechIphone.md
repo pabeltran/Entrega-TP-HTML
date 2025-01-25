@@ -1,10 +1,6 @@
 
 # <div align="center"> Proyecto TechIphone - Tienda Online</div>
 
-|  Insignias ✔  |
-| :-----------: |
-| [![GitHub pull requests](https://img.shields.io/github/issues-pr/your-repository-name?color=blue&logo=github)](https://github.com/your-repository-name/pulls) • [![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/your-repository-name?color=blue&logo=github)](https://github.com/your-repository-name/pulls) • [![GitHub forks](https://img.shields.io/github/forks/your-repository-name?logo=github)](https://github.com/your-repository-name/fork) •  [![GitHub Network](https://img.shields.io/badge/Network-blue?logo=github)](https://github.com/your-repository-name/network) |
-[![GitHub followers](https://img.shields.io/github/followers/your-username?logo=github)](#)  •  [![GitHub repo size](https://img.shields.io/github/repo-size/your-repository-name?logo=github)](#)  •  [![GitHub language count](https://img.shields.io/github/languages/count/your-repository-name?logo=github)](#)  •  [![GitHub top language](https://img.shields.io/github/languages/top/your-repository-name?logo=JavaScript)](#) |
 
 |  Puedes acceder a la versión desplegada de la tienda online a través del siguiente enlace: |
 | :-------------------------------------------------------: |
