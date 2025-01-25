@@ -6,7 +6,7 @@
 | :-------------------------------------------------------: |
 | [![TechIphone](https://img.shields.io/badge/TechIphone-105d89?style=for-the-badge&logo=github&logoColor=white&labelColor=101)](https://techiphone.com) |
 
-!
+
 
 Este repositorio contiene el desarrollo de **TechIphone**, una tienda online funcional creada como parte de un proyecto personal. El proyecto está construido con **HTML5**, **CSS3**, y **JavaScript**, utilizando un enfoque **Mobile First** y buenas prácticas de desarrollo web. Se implementaron tecnologías como **Flexbox** y **Grid** para un diseño responsivo, y **Font Awesome** para íconos.
 
